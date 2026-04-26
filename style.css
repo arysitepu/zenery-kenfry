@@ -87,3 +87,33 @@
         footer { background-color: #0f1923; color: #aaa; }
         footer a { color: #d4af37; text-decoration: none; }
         footer a:hover { color: #fff; }
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 80vh; 
+        min-height: 400px;
+    }
+    .carousel-caption {
+        bottom: 50%;
+        transform: translateY(50%);
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        padding-bottom: 0;
+    }
+    .carousel-caption h1.display-4 {
+        font-size: 2rem !important; 
+        line-height: 1.2;
+    }
+    
+    .carousel-caption .btn {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+        margin-top: 15px !important;
+    }
+}
+@media (max-width: 380px) {
+    .carousel-caption h1.display-4 {
+        font-size: 1.7rem !important;
+    }
+}
