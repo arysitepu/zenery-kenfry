@@ -1,0 +1,89 @@
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        /* Color Palette */
+        .bg-dark-blue { background-color: #1a2a3a !important; }
+        .text-dark-blue { color: #1a2a3a !important; }
+        .bg-gold { background-color: #d4af37 !important; }
+        .text-gold { color: #d4af37 !important; }
+        
+        /* Navbar */
+        .navbar { transition: all 0.3s ease; padding: 15px 0; }
+        .navbar.scrolled { background-color: #1a2a3a !important; padding: 10px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        
+        /* Hero Carousel */
+        .carousel-item {
+            height: 100vh;
+            min-height: 500px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            position: relative;
+        }
+        .carousel-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(26, 42, 58, 0.7);
+        }
+        .carousel-caption {
+            bottom: 30%;
+            z-index: 2;
+        }
+        
+        /* Sections */
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background-color: #d4af37;
+            bottom: -10px;
+            left: 0;
+        }
+        .section-title.center::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* Cards & Images */
+        .card-custom { border: none; transition: transform 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .card-custom:hover { transform: translateY(-5px); }
+        .team-img { height: 300px; object-fit: cover; object-position: top; }
+        .client-logo { filter: grayscale(100%); transition: filter 0.3s; max-height: 80px; object-fit: contain; }
+        .client-logo:hover { filter: grayscale(0%); }
+        .about-img { border-radius: 10px; box-shadow: -15px 15px 0px #d4af37; }
+
+        /* WhatsApp Floating Button */
+        .wa-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none !important;
+            transition: all 0.3s ease;
+        }
+        .wa-float:hover { background-color: #128c7e; transform: scale(1.1); color: #fff;}
+        
+        footer { background-color: #0f1923; color: #aaa; }
+        footer a { color: #d4af37; text-decoration: none; }
+        footer a:hover { color: #fff; }

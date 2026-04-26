@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenery Kenfry & Rekan - Law Firm</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="https://wa.me/6281234567890" target="_blank" class="wa-float" title="Chat dengan Kami">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-gold font-weight-bold" href="#"><i class="fas fa-balance-scale mr-2"></i>Zenery Kenfry Law</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tim">Tim Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                    <li class="nav-item ml-lg-3">
+                        <a class="btn btn-outline-danger btn-sm mt-1 font-weight-bold px-3" href="javascript:void(0)" onclick="downloadPDF()">
+                            <i class="fas fa-file-pdf mr-1"></i> Download Profile
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="beranda">
+        <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#heroCarousel" data-slide-to="1"></li>
+                <li data-target="#heroCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=1920&auto=format&fit=crop');">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption text-center">
+                        <h1 class="display-4 font-weight-bold text-white">Pendampingan Hukum Korporasi</h1>
+                        <p class="lead text-light d-none d-md-block">Melindungi aset dan jalannya bisnis Anda dengan legalitas yang kuat.</p>
+                        <a href="#kontak" class="btn btn-outline-light mt-3">Konsultasi Sekarang</a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1505664177941-10f1c1f547c6?q=80&w=1920&auto=format&fit=crop');">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption text-center">
+                        <h1 class="display-4 font-weight-bold text-white">Mediasi & Litigasi Profesional</h1>
+                        <p class="lead text-light d-none d-md-block">Kami berdedikasi mencari jalan keluar terbaik untuk setiap sengketa.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1920&auto=format&fit=crop');">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption text-center">
+                        <h1 class="display-4 font-weight-bold text-white">Penandatanganan MoU Klien</h1>
+                        <p class="lead text-light d-none d-md-block">Kepercayaan ratusan perusahaan besar ada di tangan kami.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+    <section id="tentang" class="py-5 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 pr-lg-5 text-center text-lg-left order-2 order-lg-1">
+                    <h2 class="section-title">Tentang Kami</h2>
+                    <p class="mt-4 text-muted" style="line-height: 1.8;">
+                        Zenery Kenfry Law Firm didirikan pada tahun 2010 dengan visi untuk memberikan keadilan hukum yang aksesibel dan bermartabat. Kami berfokus pada penyelesaian masalah yang efisien tanpa mengorbankan integritas.
+                    </p>
+                    <p class="text-muted" style="line-height: 1.8;">
+                        Sepanjang perjalanan, kami telah dipercaya oleh berbagai entitas—dari perusahaan multinasional hingga individu—untuk menangani kasus-kasus kompleks yang membutuhkan ketelitian tinggi. Keberhasilan Anda adalah kemenangan kami.
+                    </p>
+                    <div class="d-flex align-items-center mt-4 justify-content-center justify-content-lg-start">
+                        <div class="mr-4 text-center">
+                            <h3 class="text-gold font-weight-bold mb-0">15+</h3>
+                            <small class="text-muted">Tahun Pengalaman</small>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-gold font-weight-bold mb-0">500+</h3>
+                            <small class="text-muted">Kasus Selesai</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0 text-center">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" alt="Owner Law Firm" class="img-fluid about-img" style="max-width: 80%;">
+                    <div class="mt-4">
+                        <h5 class="font-weight-bold mb-0">Bpk. Ahmad Zenery Kenfry, S.H., M.H.</h5>
+                        <span class="text-muted">Founder & Managing Partner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portofolio" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title center mb-5">Klien & Mitra Kami</h2>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-6 col-md-3 mb-4">
+                    <img src="img/mocukp.png" alt="PT Maju Bersama" class="img-fluid client-logo">
+                    <p class="mt-2 font-weight-bold small">PT. MOCKUP</p>
+                </div>
+                <div class="col-6 col-md-3 mb-4">
+                    <img src="img/mocukp.png" alt="PT Steady Adi Teknologi" class="img-fluid client-logo">
+                    <p class="mt-2 font-weight-bold small">PT. MOCKUP</p>
+                </div>
+                <div class="col-6 col-md-3 mb-4">
+                    <img src="img/mocukp.png" alt="Bank Artha Jaya" class="img-fluid client-logo">
+                    <p class="mt-2 font-weight-bold small">PT. MOCKUP</p>
+                </div>
+                <div class="col-6 col-md-3 mb-4">
+                    <img src="img/mocukp.png" alt="Zenery Kenfry Group" class="img-fluid client-logo">
+                    <p class="mt-2 font-weight-bold small">PT. MOCKUP</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title center mb-5">Layanan Hukum</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-custom h-100 p-4">
+                        <i class="fas fa-comments fa-3x text-gold mb-4"></i>
+                        <h5 class="font-weight-bold">Konsultasi Hukum</h5>
+                        <p class="text-muted">Opini hukum komprehensif untuk langkah antisipatif dan strategis bagi individu maupun bisnis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-custom h-100 p-4">
+                        <i class="fas fa-building fa-3x text-gold mb-4"></i>
+                        <h5 class="font-weight-bold">Hukum Korporasi</h5>
+                        <p class="text-muted">Pendirian PT, perancangan kontrak, akuisisi, merger, hingga kepatuhan hukum perusahaan.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-custom h-100 p-4">
+                        <i class="fas fa-gavel fa-3x text-gold mb-4"></i>
+                        <h5 class="font-weight-bold">Litigasi & Resolusi Sengketa</h5>
+                        <p class="text-muted">Pendampingan di pengadilan negeri, pengadilan niaga, tipikor, maupun arbitrase dan mediasi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tim" class="py-5 bg-dark-blue text-white">
+        <div class="container text-center">
+            <h2 class="section-title center mb-5 text-white">Tim Advokat</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-dark border-0">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" class="card-img-top team-img" alt="Advokat 1">
+                        <div class="card-body">
+                            <h6 class="font-weight-bold mb-1">Siti Aminah, S.H., LL.M.</h6>
+                            <p class="small text-gold mb-2">Senior Partner - Corporate Law</p>
+                            <button class="btn btn-sm btn-outline-dark w-100 btn-detail-tim" data-nama="Siti Aminah" data-jabatan="Pakar hukum korporasi dengan pengalaman menangani merger multinasional.">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-dark border-0">
+                        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=600&auto=format&fit=crop" class="card-img-top team-img" alt="Advokat 2">
+                        <div class="card-body">
+                            <h6 class="font-weight-bold mb-1">Budi Santoso, S.H., M.H.</h6>
+                            <p class="small text-gold mb-2">Partner - Criminal Litigation</p>
+                            <button class="btn btn-sm btn-outline-dark w-100 btn-detail-tim" data-nama="Budi Santoso" data-jabatan="Spesialis litigasi pidana dan perdata yang memiliki rekam jejak kemenangan tinggi di pengadilan negeri.">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-dark border-0">
+                        <img src="https://images.unsplash.com/photo-1580820267682-426da823b514?q=80&w=600&auto=format&fit=crop" class="card-img-top team-img" alt="Advokat 3">
+                        <div class="card-body">
+                            <h6 class="font-weight-bold mb-1">Diana Putri, S.H.</h6>
+                            <p class="small text-gold mb-2">Associate - Family Law</p>
+                            <button class="btn btn-sm btn-outline-dark w-100 btn-detail-tim" data-nama="Diana Putri" data-jabatan="Menangani berbagai persoalan hukum keluarga seperti waris, hak asuh, dan mediasi perceraian.">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-dark border-0">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop" class="card-img-top team-img" alt="Advokat 4">
+                        <div class="card-body">
+                            <h6 class="font-weight-bold mb-1">Rizky Pratama, S.H.</h6>
+                            <p class="small text-gold mb-2">Associate - Tax Law</p>
+                            <button class="btn btn-sm btn-outline-dark w-100 btn-detail-tim" data-nama="Rizky Pratama" data-jabatan="Fokus pada penyelesaian sengketa pajak dan audit perusahaan.">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <a href="/tim-lengkap" class="btn btn-gold bg-gold text-dark font-weight-bold px-4 py-2" onclick="event.preventDefault(); Swal.fire('Navigasi', 'Ini akan mengarah ke view blade/halaman semua tim', 'info');">Lihat Semua Tim <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-5">Hubungi Kami</h2>
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                        <h5 class="font-weight-bold text-dark-blue">Kantor Pusat</h5>
+                        <p class="text-muted mb-2"><i class="fas fa-map-marker-alt text-gold mr-2"></i> Jl. MH Thamrin Kav. 10, Jakarta Pusat 10230, Indonesia</p>
+                        <p class="text-muted mb-2"><i class="fas fa-envelope text-gold mr-2"></i> info@Zenery Kenfrylaw.co.id</p>
+                        <p class="text-muted mb-2"><i class="fas fa-phone-alt text-gold mr-2"></i> +62 21 1234 5678</p>
+                    </div>
+                    
+                    <div class="map-container shadow-sm border" style="border-radius: 10px; overflow: hidden;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4950798150493!2d106.8200676153696!3d-6.198226095512762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f41f71a179ad%3A0xb5b7381df4d9d832!2sJakarta%20Pusat%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1683000000000!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="card shadow border-0 p-4" style="border-radius: 10px;">
+                        <h4 class="font-weight-bold mb-4">Kirim Pesan/Konsultasi</h4>
+                        <form id="formKontak" onsubmit="submitForm(event)">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>Nama Lengkap</label>
+                                    <input type="text" class="form-control" name="nama" required placeholder="Masukkan nama">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" name="email" required placeholder="Masukkan email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Nomor Telepon/WA</label>
+                                <input type="tel" class="form-control" name="telepon" required placeholder="Contoh: 08123456789">
+                            </div>
+                            <div class="form-group">
+                                <label>Detail Kasus / Pesan</label>
+                                <textarea class="form-control" name="pesan" rows="5" required placeholder="Ceritakan masalah hukum Anda..."></textarea>
+                            </div>
+                            <button type="submit" class="btn bg-dark-blue text-white w-100 py-2 font-weight-bold" id="btnSubmit">Kirim Permintaan <i class="fas fa-paper-plane ml-2"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-4 col-lg-5 mb-4">
+                    <h5 class="text-white font-weight-bold mb-4"><i class="fas fa-balance-scale text-gold mr-2"></i>Zenery Kenfry Law Firm</h5>
+                    <p>Berdedikasi untuk memberikan advokasi hukum yang berintegritas, transparan, dan profesional untuk perlindungan hak Anda.</p>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <h5 class="text-white font-weight-bold mb-4">Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#tentang">Tentang Kami</a></li>
+                        <li class="mb-2"><a href="#layanan">Area Praktik</a></li>
+                        <li class="mb-2"><a href="#tim">Pengacara Kami</a></li>
+                        <li class="mb-2"><a href="#portofolio">Klien Kami</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-4 mb-4">
+                    <h5 class="text-white font-weight-bold mb-4">Sosial Media</h5>
+                    <p>Ikuti kami untuk update dan artikel hukum terbaru.</p>
+                    <div>
+                        <a href="#" class="btn btn-outline-light btn-sm mr-2 rounded-circle" style="width: 35px; height: 35px;"><i class="fab fa-facebook-f mt-1"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm mr-2 rounded-circle" style="width: 35px; height: 35px;"><i class="fab fa-twitter mt-1"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm mr-2 rounded-circle" style="width: 35px; height: 35px;"><i class="fab fa-instagram mt-1"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 35px; height: 35px;"><i class="fab fa-linkedin-in mt-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr style="background-color: #333;">
+            <div class="text-center mt-3">
+                <p class="mb-0 small">&copy; 2026 Zenery Kenfry Law Firm. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script>
+        // --- 1. Konfigurasi Toastr ---
+        toastr.options = {
+            "closeButton": true,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+        };
+
+        // --- 2. Interaksi Tombol Lihat Detail Tim ---
+        $('.btn-detail-tim').on('click', function() {
+            let nama = $(this).data('nama');
+            let jabatan = $(this).data('jabatan');
+            
+            Swal.fire({
+                title: nama,
+                text: jabatan,
+                icon: 'info',
+                confirmButtonColor: '#1a2a3a',
+                confirmButtonText: 'Tutup'
+            });
+        });
+
+        // --- 3. Proses AJAX Full untuk Form ---
+        function submitForm(e) {
+            e.preventDefault();
+            let form = $('#formKontak');
+            let formData = form.serialize();
+
+            // Pop Up Confirm pakai Sweet Alert
+            Swal.fire({
+                title: 'Konfirmasi Pengiriman',
+                text: "Apakah data yang Anda masukkan sudah benar?",
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonColor: '#1a2a3a',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya, Kirim',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    
+                    $.ajax({
+                        url: 'https://jsonplaceholder.typicode.com/posts', // Ganti dengan route Laravel API / Backend Controller
+                        type: 'POST',
+                        data: formData,
+                        beforeSend: function() {
+                            $('#btnSubmit').html('<i class="fas fa-spinner fa-spin"></i> Memproses...');
+                            $('#btnSubmit').attr('disabled', true);
+                        },
+                        success: function(response) {
+                            // Notifikasi Success pakai Toast
+                            toastr.success('Pesan konsultasi berhasil dikirim. Kami akan menghubungi Anda segera.', 'Sukses!');
+                            form[0].reset();
+                        },
+                        error: function(xhr) {
+                            // Notifikasi Error pakai Toast
+                            toastr.error('Terjadi kesalahan pada server. Gagal mengirim pesan.', 'Error!');
+                        },
+                        complete: function() {
+                            $('#btnSubmit').html('Kirim Permintaan <i class="fas fa-paper-plane ml-2"></i>');
+                            $('#btnSubmit').attr('disabled', false);
+                        }
+                    });
+                }
+            });
+        }
+
+        function downloadPDF() {
+            Swal.fire({
+                title: 'Download Company Profile?',
+                text: "Sistem akan menyiapkan dokumen PDF terbaru untuk Anda.",
+                icon: 'info',
+                showCancelButton: true,
+                confirmButtonColor: '#1a2a3a',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya, Download',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Simulasi proses AJAX ke backend Laravel
+                    $.ajax({
+                        url: '/api/generate-pdf', // Endpoint backend Anda nantinya
+                        type: 'GET',
+                        beforeSend: function() {
+                            toastr.info('Sedang menyiapkan dokumen...', 'Mohon Tunggu');
+                        },
+                        success: function(response) {
+                            // Logika sukses: Misal mengarahkan ke path yang ada di database (pdf_path)
+                            toastr.success('Download akan segera dimulai.', 'Berhasil!');
+                            
+                            // Simulasi trigger download file
+                            window.location.href = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf";
+                        },
+                        error: function() {
+                            toastr.error('Gagal mengunduh PDF. Silakan coba lagi nanti.', 'Error!');
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
